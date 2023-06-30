@@ -1,0 +1,52 @@
+LIBRARY urg3d
+
+EXPORTS
+	; urg3d_sensor
+	urg3d_open
+	urg3d_close
+	urg3d_next_receive_ready
+
+	urg3d_low_request_command
+	urg3d_low_get_binary
+	urg3d_low_get_ri
+	urg3d_low_get_ro
+	urg3d_low_get_ax
+	urg3d_low_purge
+
+	urg3d_high_set_blocking_timeout_ms
+	urg3d_high_blocking_init
+	urg3d_high_blocking_wait_finished_initialize
+	urg3d_high_blocking_get_sensor_version
+	urg3d_high_blocking_get_horizontal_interlace_count
+	urg3d_high_blocking_get_vertical_interlace_count
+	urg3d_high_blocking_set_horizontal_interlace_count
+	urg3d_high_blocking_set_vertical_interlace_count
+	urg3d_high_start_data
+	urg3d_high_stop_data
+	urg3d_high_get_measurement_data
+	urg3d_high_get_auxiliary_data
+	urg3d_high_blocking_restart
+
+	; urg3d_connection
+	urg3d_connection_open
+	urg3d_connection_close
+	urg3d_connection_set_baudrate
+	urg3d_connection_write
+	urg3d_connection_read
+
+	; urg3d_ring_buffer
+	urg3d_ring_initialize
+	urg3d_ring_clear
+	urg3d_ring_size
+	urg3d_ring_capacity
+	urg3d_ring_write
+	urg3d_ring_read
+
+	; urg3d_tcpclient
+	urg3d_tcpclient_open
+	urg3d_tcpclient_close
+	urg3d_tcpclient_read
+	;urg3d_tcpclient_read_and_set_ringbuffer
+	urg3d_tcpclient_write
+	urg3d_tcpclient_error
+	urg3d_tcpclient_readline
